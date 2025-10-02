@@ -1,0 +1,67 @@
+import Image from "next/image";
+import { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from "@/components/ui/card";
+import Me from "./Me";
+import Link from "next/link";
+import { EducationCard } from "@/components/home/EducationCard";
+import { ExperienceCard } from "@/components/home/ExperienceCard";
+import { ProjectsCard } from "@/components/home/ProjectsCard";
+import { SkillsCard } from "@/components/home/SkillsCard";
+
+export default function MasonryPage() {
+  return (
+    <main className="mx-auto max-w-7xl px-4 py-10">
+      {/*
+        The magic: CSS columns create a masonry-like flow without JS.
+        - Use responsive column counts
+        - Add gap between columns
+        - Make each item avoid breaking with `break-inside-avoid`
+      */}
+      <section className="columns-1 sm:columns-2 lg:columns-3 xl:columns-3 gap-6 [column-fill:_balance] space-y-6">
+        <article className="mb-6 break-inside-avoid">
+          <Me />
+        </article>
+        <article className="mb-6 break-inside-avoid">
+          <Link
+            href="https://tryhackme.com/p/ruohao"
+            target="_blank"
+            className="block"
+          >
+            {/* Keep ratio so columns don't jump */}
+            <div className=" w-full">
+              <img
+                src="https://tryhackme-badges.s3.amazonaws.com/ruohao.png"
+                alt="TryHackMe badge"
+                className="object-cover w-full"
+              />
+            </div>
+          </Link>
+        </article>
+        <EducationCard />
+        <ExperienceCard />
+        <ProjectsCard />
+        <SkillsCard />
+
+      </section>
+    </main>
+  );
+}
+
+/*
+Notes:
+- Works with shadcn/ui by importing Card from "@/components/ui/card".
+- The masonry effect relies on CSS columns; each card is an inline-block (via default block -> wrap in article with break-inside-avoid).
+- `mb-*` sets the vertical rhythm between items in the same column.
+- `[column-fill:_balance]` helps even out columns in modern browsers; safe to remove if undesired.
+
+Bonus: If you prefer a reusable component:
+
+export function Masonry({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance]">
+      <div className="[&>*]:mb-6 [&>*]:break-inside-avoid">{children}</div>
+    </div>
+  );
+}
+
+Then use <Masonry> and drop <Card/>s as children.
+*/

@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 import { Github, Linkedin, Mail } from "lucide-react"
 
@@ -28,7 +26,6 @@ export default function SideLinks() {
     { href: "https://github.com/Ruohao1", label: "GitHub", icon: <Github className="w-5 h-5" /> },
     { href: "https://linkedin.com/in/ruohaolin", label: "LinkedIn", icon: <Linkedin className="w-5 h-5" /> },
     { href: "https://medium.com/@ruohaolin", label: "Medium", icon: <MediumIcon className="w-5 h-5" /> },
-    { href: "mailto:you@example.com", label: "Email", icon: <Mail className="w-5 h-5" /> },
   ]
 
   return (

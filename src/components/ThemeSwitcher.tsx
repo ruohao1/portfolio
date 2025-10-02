@@ -24,6 +24,7 @@ export function ThemeSwitcher() {
       size="icon"
       onClick={() => setTheme(isDark ? "light" : "dark")}
       className="hover:cursor-pointer"
+      asChild
     >
       {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
     </Button>

@@ -25,7 +25,8 @@ export default function SideLinks() {
   const links = [
     { href: "https://github.com/Ruohao1", label: "GitHub", icon: <Github className="w-5 h-5" /> },
     { href: "https://linkedin.com/in/ruohaolin", label: "LinkedIn", icon: <Linkedin className="w-5 h-5" /> },
-    { href: "https://medium.com/@ruohaolin", label: "Medium", icon: <MediumIcon className="w-5 h-5" /> },
+    // { href: "https://medium.com/@ruohaolin", label: "Medium", icon: <MediumIcon className="w-5 h-5" /> },
+    { href: "https://notes.ruohao.dev/", label: "Notes", icon: <MediumIcon className="w-5 h-5" /> },
   ]
 
   return (

@@ -9,25 +9,15 @@ import { SkillsCard } from "@/components/home/SkillsCard";
 
 export default function MasonryPage() {
   return (
-    <main className="mx-auto max-w-7xl px-4 py-10">
-      {/*
-        The magic: CSS columns create a masonry-like flow without JS.
-        - Use responsive column counts
-        - Add gap between columns
-        - Make each item avoid breaking with `break-inside-avoid`
-      */}
-      <section className="columns-1 sm:columns-2 lg:columns-3 xl:columns-3 gap-6 [column-fill:_balance] space-y-6">
+    <main className="mx-auto max-w-7xl h-full px-4 py-10">
+      <section className="columns-1 sm:columns-2 lg:columns-3 xl:columns-3 gap-6 [column-fill:_balance]">
         <article className="mb-6 break-inside-avoid">
           <Me />
         </article>
+
         <article className="mb-6 break-inside-avoid">
-          <Link
-            href="https://tryhackme.com/p/ruohao"
-            target="_blank"
-            className="block"
-          >
-            {/* Keep ratio so columns don't jump */}
-            <div className=" w-full">
+          <Link href="https://tryhackme.com/p/ruohao" target="_blank" className="block">
+            <div className="w-full">
               <img
                 src="https://tryhackme-badges.s3.amazonaws.com/ruohao.png"
                 alt="TryHackMe badge"
@@ -36,11 +26,22 @@ export default function MasonryPage() {
             </div>
           </Link>
         </article>
-        <EducationCard />
-        <ExperienceCard />
-        <ProjectsCard />
-        <SkillsCard />
 
+        <article className="mb-6 break-inside-avoid">
+          <EducationCard />
+        </article>
+
+        <article className="mb-6 break-inside-avoid">
+          <ExperienceCard />
+        </article>
+
+        <article className="mb-6 break-inside-avoid">
+          <ProjectsCard />
+        </article>
+
+        {/* <article className="mb-6 break-inside-avoid">
+          <SkillsCard />
+        </article> */}
       </section>
     </main>
   );

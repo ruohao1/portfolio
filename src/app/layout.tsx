@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`font-roboto font-roboto-mono ${roboto.variable} ${robotoMono.variable} antialiased w-max-screen w-screen`}
+        className={`font-normal ${roboto.variable} ${robotoMono.variable} antialiased w-max-screen w-screen`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

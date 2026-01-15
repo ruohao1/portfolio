@@ -5,7 +5,7 @@ import Main from "@/components/home/Main";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col max-w-screen">
+    <div className="mix-h-screen flex justify-center flex-col max-w-screen">
       {/* <Header /> */}
       <SideLinks />
       <Contact />

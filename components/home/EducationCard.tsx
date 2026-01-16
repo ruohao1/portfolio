@@ -23,13 +23,13 @@ export function EducationCard() {
           <div className="font-light">Internet, Connected Systems and Security</div>
           <div className="text-xs text-muted-foreground">2023–2026 · Nancy, France</div>
         </div>
-        <hr className="border-border/60" />
-        <div>
-          <div className="font-bold">Lycée Chaptal</div>
-          <div>Classes Préparatoires</div>
-          <div className="font-light">MPSI / MP*</div>
-          <div className="text-xs text-muted-foreground">2021–2023 · Paris, France</div>
-        </div>
+        {/* <hr className="border-border/60" /> */}
+        {/* <div> */}
+        {/*   <div className="font-bold">Lycée Chaptal</div> */}
+        {/*   <div>Classes Préparatoires</div> */}
+        {/*   <div className="font-light">MPSI / MP*</div> */}
+        {/*   <div className="text-xs text-muted-foreground">2021–2023 · Paris, France</div> */}
+        {/* </div> */}
       </CardContent>
     </Card>
   );

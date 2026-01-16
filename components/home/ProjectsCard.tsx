@@ -50,7 +50,7 @@ export function ProjectsCard() {
             </li>
             <li>
               Implemented <span className="text-foreground font-semibold">WireGuard</span> remote access with key-based auth, restricted routes, and
-              segmented services to reduce blast radius (<span className="text-foreground font-semibold">Zero Trust</span> + <span className="text-foreground font-semibold"> network isolation</span>).
+              segmented network (<span className="text-foreground font-semibold">Zero Trust</span> + <span className="text-foreground font-semibold"> network isolation</span>).
             </li>
           </ul>
 
@@ -77,7 +77,7 @@ export function ProjectsCard() {
           </div>
 
           <div className="mt-1 text-xs text-muted-foreground">
-            Web Exploitation · PrivEsc · Enumeration · Detection/IR
+            Web Exploitation · PrivEsc · Enumeration
           </div>
           <ul className="text-muted-foreground mt-3 list-disc space-y-1.5 pl-5">
             <li>

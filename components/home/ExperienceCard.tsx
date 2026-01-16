@@ -20,7 +20,7 @@ export function ExperienceCard() {
             <div>
               <div className="font-bold">Wintics — Operational Security Intern</div>
               <div className="text-xs text-muted-foreground">
-                Paris, France · Jun 2025 – Aug 2025
+                Jun 2025 – Aug 2025 · Paris, France
               </div>
             </div>
 

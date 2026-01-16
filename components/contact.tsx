@@ -5,7 +5,7 @@ import React from "react"
 
 export default function Contact() {
   const links = [
-    { href: "/resume_sep2025.pdf", label: "Resume", icon: <FileUser /> },
+    { href: "/cv_EN_jan26.pdf", label: "Resume", icon: <FileUser /> },
     { href: "mailto:ruohaolin@gmail.com", label: "Email", icon: <Mail /> },
   ]
 

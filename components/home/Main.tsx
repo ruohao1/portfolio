@@ -1,11 +1,8 @@
-import Image from "next/image";
-import { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from "@/components/ui/card";
 import Me from "./Me";
 import Link from "next/link";
 import { EducationCard } from "@/components/home/EducationCard";
 import { ExperienceCard } from "@/components/home/ExperienceCard";
 import { ProjectsCard } from "@/components/home/ProjectsCard";
-import { SkillsCard } from "@/components/home/SkillsCard";
 
 export default function MasonryPage() {
   return (
@@ -32,15 +29,12 @@ export default function MasonryPage() {
         </article>
 
         <article className="mb-6 break-inside-avoid">
-          <EducationCard />
-        </article>
-
-        <article className="mb-6 break-inside-avoid">
           <ExperienceCard />
         </article>
 
-
-
+        <article className="mb-6 break-inside-avoid">
+          <EducationCard />
+        </article>
 
         {/* <article className="mb-6 break-inside-avoid">
           <SkillsCard />

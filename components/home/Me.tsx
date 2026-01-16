@@ -13,7 +13,6 @@ export default function Me() {
       </p>
       <div className="flex flex-wrap gap-1.5">
         <Badge variant="secondary">France</Badge>
-        <Badge variant="secondary">Luxembourg</Badge>
         <Badge variant="secondary">Canada</Badge>
       </div>
     </div>

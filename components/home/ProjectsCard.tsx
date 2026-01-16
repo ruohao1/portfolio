@@ -1,15 +1,19 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Shield, Home, Swords, Radar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export function ProjectsCard() {
   return (
     <Card className="overflow-hidden">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-primary">
-          <Shield className="h-5 w-5" />
-          Projects
+          <Link href='/projects' className="flex items-center gap-2 hover:underline transition-all ease-in-out duration-150">
+            <Shield className="h-5 w-5" />
+            Projects
+          </Link>
         </CardTitle>
       </CardHeader>
 
@@ -106,7 +110,11 @@ export function ProjectsCard() {
           </ul>
 
         </section>
+
       </CardContent>
+      <CardFooter className="flex justify-end">
+        <Link href="/projects" className="text-xs text-muted-foreground underline">View more...</Link>
+      </CardFooter>
     </Card>
   );
 }

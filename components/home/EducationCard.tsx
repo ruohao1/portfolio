@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
+import Link from "next/link";
 
 export function EducationCard() {
   return (

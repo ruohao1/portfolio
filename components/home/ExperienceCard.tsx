@@ -1,14 +1,16 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Briefcase, FileText, ShieldCheck, TerminalSquare } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export function ExperienceCard() {
   return (
     <Card className="overflow-hidden">
       <CardHeader className="pb-3">
-        <CardTitle className="flex items-center gap-2 text-primary">
-          <Briefcase className="h-5 w-5" />
-          Professional Experience
+        <CardTitle className="items-center gap-2 text-primary">
+          <Link href="/careers" className="flex items-center gap-2">
+            <Briefcase className="h-5 w-5" />Professional Experience
+          </Link>
         </CardTitle>
       </CardHeader>
 
@@ -50,6 +52,9 @@ export function ExperienceCard() {
           </ul>
         </section>
       </CardContent>
+      <CardFooter className="flex justify-end">
+        <Link href="/careers" className="text-xs text-muted-foreground underline">View more...</Link>
+      </CardFooter>
     </Card >
   );
 }

@@ -4,10 +4,12 @@ import Link from "next/link";
 
 export function EducationCard() {
   return (
-    <Card>
+    <Card className="overflow-hidden">
       <CardHeader>
-        <CardTitle className="flex text-primary items-center gap-2">
-          <GraduationCap className="h-5 w-5" /> Education
+        <CardTitle className="flex items-center gap-2 text-primary">
+          <Link href='/education' className="flex items-center gap-2 hover:underline">
+            <GraduationCap className="h-5 w-5" /> Education
+          </Link>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 text-sm">

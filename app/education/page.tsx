@@ -89,9 +89,13 @@ export default function EducationPage() {
             <div key={`${edu.institution}-${edu.time}`}>
               <div className="py-6">
                 <div className="flex flex-col gap-1 mb-2">
-                  <h2 className="text-xl font-semibold text-foreground">{edu.institution}</h2>
+
+                  <div className="flex justtify-between">
+                    <h2 className="text-xl font-semibold text-foreground">{edu.institution}</h2>
+                    <h2 className="text-xl font-semibold text-foreground">{edu.time}</h2>
+                  </div>
                   <span className="text-sm text-muted-foreground">
-                    {edu.time} · {edu.location}
+                    {edu.location}
                   </span>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">

@@ -6,14 +6,13 @@ import Link from "next/link";
 export function ExperienceCard() {
   return (
     <Card className="overflow-hidden">
-      <CardHeader className="pb-3">
-        <CardTitle className="items-center gap-2 text-primary">
-          <Link href="/careers" className="flex items-center gap-2">
-            <Briefcase className="h-5 w-5" />Professional Experience
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2 text-primary">
+          <Link href='/careers' className="flex items-center gap-2 hover:underline">
+            <Briefcase className="h-5 w-5" />Careers
           </Link>
         </CardTitle>
       </CardHeader>
-
       <CardContent className="space-y-4 text-sm">
         <section className="space-y-3">
           <div className="flex items-start justify-between gap-4">

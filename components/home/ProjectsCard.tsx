@@ -10,7 +10,7 @@ export function ProjectsCard() {
     <Card className="overflow-hidden">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-primary">
-          <Link href='/projects' className="flex items-center gap-2 hover:underline transition-all ease-in-out duration-150">
+          <Link href='/projects' className="flex items-center gap-2 hover:underline">
             <Shield className="h-5 w-5" />
             Projects
           </Link>

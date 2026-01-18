@@ -30,9 +30,10 @@ const careers: Career[] = [
     time: "Jun 2025 - Aug 2025",
     location: "Paris, France",
     description: [
-      "Built an Ubuntu hardening automation tool using Python + Ansible, generating auditable reports for ops.",
-      "Implemented baseline controls aligned with CIS and ANSSI: SSH policy, auth hardening, logging, firewall defaults.",
-      "Authored runbooks and troubleshooting playbooks to enable operational adoption and reduce time-to-fix.",
+      "Developed an Ansible-based hardening framework enforcing CIS and ANSSI benchmarks.",
+      "Implemented security controls for SSH, authentication, logging, firewalling, and audit compliance.",
+      "Implemented automated standards-compliance audits with structured security reports.",
+      "Authored operator-facing documentation and troubleshooting playbooks for handover to ops teams and future interns.",
     ],
     skills: ["Python", "Ansible", "Ubuntu", "CIS", "ANSSI", "Security Hardening"],
   },
@@ -67,9 +68,9 @@ export default function CareersPage() {
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-accent mb-2 flex items-center gap-3">
             <Briefcase className="h-9 w-9" />
-            Professional Experience
+            Careers
           </h1>
-          <p className="text-muted-foreground">My professional journey in cybersecurity and operations.</p>
+          <p className="text-muted-foreground">My professional journey</p>
         </header>
 
         <div className="flex flex-col">
@@ -77,10 +78,12 @@ export default function CareersPage() {
             <div key={`${career.company}-${career.time}`}>
               <div className="py-6">
                 <div className="flex flex-col gap-1 mb-2">
-                  <h2 className="text-xl font-semibold text-foreground">{career.company}</h2>
-                  <span className="text-foreground font-medium">{career.position}</span>
-                  <span className="text-sm text-muted-foreground">
-                    {career.time} · {career.location}
+                  <div className="flex justify-between">
+                    <h2 className="text-xl font-semibold text-foreground">{career.position}</h2>
+                    <h2 className="text-xl font-semibold text-foreground">{career.time}</h2>
+                  </div>
+                  <span className="font-medium text-sm text-muted-foreground">
+                    <Link href={`https://wintics.com`} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">{career.company}</Link> · {career.location}
                   </span>
                 </div>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground leading-relaxed mb-4">

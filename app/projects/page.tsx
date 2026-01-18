@@ -16,7 +16,7 @@ import {
 
 interface Project {
   title: string
-  description: string
+  description: string[]
   techStack: string[]
   time: string
   githubUrl?: string
@@ -27,24 +27,32 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Homelab Environment",
-    description:
-      "Provisioned Proxmox workloads with Terraform (IaC) and enforced desired-state config using Ansible. Built a log pipeline into the Elastic Stack and implemented WireGuard remote access with Zero Trust architecture.",
+    description: [
+      "Built and operated a Proxmox-based homelab hosting VMs and containers for self-hosted applications and security infrastructure.",
+      "Deployed self-hosted services including file synchronization and password management.",
+      "Designed a segmented virtual network using pfSense with controlled inter-segment routing.",
+      "Implemented secure remote access via a WireGuard VPN for off-site access to internal services.",
+      "Deployed a SIEM stack to collect and analyze logs from hosts, network devices, and applications.",
+      "Currently migrating infrastructure to IaC using Terraform and Ansible."
+    ],
     techStack: ["Proxmox", "Terraform", "Ansible", "Elastic Stack", "WireGuard"],
     time: "2024 - Present",
     githubUrl: "https://github.com/Ruohao1",
   },
   {
     title: "Ubuntu Hardening Automation",
-    description:
+    description: [
       "Built a hardening automation tool using Python and Ansible, generating auditable reports for ops. Implemented baseline controls aligned with CIS and ANSSI standards.",
+    ],
     techStack: ["Python", "Ansible", "CIS", "ANSSI", "Ubuntu"],
     time: "Jun 2025 - Aug 2025",
     githubUrl: "https://github.com/Ruohao1",
   },
   {
     title: "TryHackMe Labs",
-    description:
+    description: [
       "Top 1% ranking with regular labs across recon/enumeration, exploitation, and post-exploitation. Documented write-ups covering tooling like nmap, ffuf, Burp, and Wireshark.",
+    ],
     techStack: ["Web Exploitation", "PrivEsc", "Enumeration", "Detection/IR"],
     time: "2023 - Present",
     liveUrl: "https://tryhackme.com/p/ruohao",
@@ -52,7 +60,9 @@ const projects: Project[] = [
   {
     title: "Security Portfolio Website",
     description:
-      "Personal portfolio and CV website built with Next.js and Tailwind CSS. Features responsive design with dark theme and interactive components.",
+      [
+        "Personal portfolio and CV website built with Next.js and Tailwind CSS. Features responsive design with dark theme and interactive components.",
+      ],
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     time: "2025",
     githubUrl: "https://github.com/Ruohao1",
@@ -89,7 +99,7 @@ export default function ProjectsPage() {
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-accent mb-2">Projects</h1>
           <p className="text-muted-foreground">
-            A collection of my work in cybersecurity, infrastructure, and development.
+            A collection of my work.
           </p>
         </header>
 
@@ -129,7 +139,11 @@ export default function ProjectsPage() {
                     )}
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed mb-4">{project.description}</p>
+                <ul className="list-disc list-inside space-y-1 text-muted-foreground leading-relaxed mb-4">
+                  {project.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.map((tech) => (
                     <Badge key={tech} variant="outline" className="text-accent border-accent/30">

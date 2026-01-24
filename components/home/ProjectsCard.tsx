@@ -93,7 +93,7 @@ export function ProjectsCard() {
             <li>
               Documented{" "}
               <a
-                href="https://notes.ruohao.dev/"
+                href="https://writeups.ruohao.dev/"
                 target="_blank"
                 className="font-semibold text-primary underline underline-offset-4"
               >

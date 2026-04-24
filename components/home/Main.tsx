@@ -8,7 +8,7 @@ import { ProjectsCard } from "@/components/home/ProjectsCard";
 
 export default function MasonryPage() {
   return (
-    <main className="mx-auto max-w-7xl h-full px-4 py-10">
+    <main className="mx-auto max-w-7xl h-full px-4 pt-24 pb-24 md:py-10">
       <section className="columns-1 sm:columns-2 lg:columns-3 xl:columns-3 gap-6 [column-fill:_balance]">
         <article className="mb-6 break-inside-avoid">
           <Me />

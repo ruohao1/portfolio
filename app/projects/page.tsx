@@ -76,7 +76,7 @@ export default function ProjectsPage() {
       <SideLinks />
       <Contact />
 
-      <div className="container mx-auto px-4 py-16 md:px-20 lg:px-32">
+      <div className="container mx-auto px-4 pt-24 pb-24 md:px-20 md:py-16 lg:px-32">
         <nav className="flex items-center gap-4 mb-8">
           <Button variant="ghost" size="icon" asChild>
             <Link href="/" aria-label="Go back">

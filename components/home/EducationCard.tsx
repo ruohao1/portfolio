@@ -20,7 +20,7 @@ export function EducationCard() {
         </div>
         <hr className="border-border/60" />
         <div>
-          <div className="font-bold">Télécom Nancy — <a href="https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-informatique/" target="_blank" className="font-normal underline">(Top 3 2026)</a></div>
+          <div className="font-bold">Télécom Nancy — <a href="https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-informatique/" target="_blank" rel="noopener noreferrer" className="font-normal underline">(Top 3 2026)</a></div>
           <div>Master’s in Computer Science</div>
           <div className="font-light">Internet, Connected Systems and Security</div>
           <div className="text-xs text-muted-foreground">2023–2026 · Nancy, France</div>

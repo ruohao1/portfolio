@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import Me from "./Me";
 import Link from "next/link";
 import { EducationCard } from "@/components/home/EducationCard";
@@ -13,7 +15,7 @@ export default function MasonryPage() {
         </article>
 
         <article className="mb-6 break-inside-avoid">
-          <Link href="https://tryhackme.com/p/ruohao" target="_blank" className="block">
+          <Link href="https://tryhackme.com/p/ruohao" target="_blank" rel="noopener noreferrer" className="block">
             <div className="w-full">
               <img
                 src="https://tryhackme-badges.s3.amazonaws.com/ruohao.png"

@@ -90,7 +90,7 @@ export default function EducationPage() {
               <div className="py-6">
                 <div className="flex flex-col gap-1 mb-2">
 
-                  <div className="flex justtify-between">
+                  <div className="flex justify-between">
                     <h2 className="text-xl font-semibold text-foreground">{edu.institution}</h2>
                     <h2 className="text-xl font-semibold text-foreground">{edu.time}</h2>
                   </div>

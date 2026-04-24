@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
-import { Briefcase, FileText, ShieldCheck, TerminalSquare } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Briefcase } from "lucide-react";
 import Link from "next/link";
 
 export function ExperienceCard() {

@@ -1,9 +1,17 @@
 import { Badge } from "../ui/badge";
+import Image from "next/image";
 
 export default function Me() {
   return (
     <div className="flex-1 w-full space-y-4">
-      <img src="/profile.jpg" alt="cedric-lin" className="rounded-full" />
+      <Image
+        src="/profile.jpg"
+        alt="cedric-lin"
+        width={240}
+        height={240}
+        className="rounded-full"
+        priority
+      />
       <div>
         <h1 className="text-primary text-5xl font-bold">Cedric LIN</h1>
         <h2>Master’s student in Cybersecurity</h2>

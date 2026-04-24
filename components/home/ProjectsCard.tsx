@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Shield, Home, Swords, Radar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export function ProjectsCard() {
   return (
@@ -81,22 +82,24 @@ export function ProjectsCard() {
           </div>
           <ul className="text-muted-foreground mt-3 list-disc space-y-1.5 pl-5">
             <li>
-              <a
-                href="https://tryhackme.com/p/ruohao"
-                target="_blank"
-                className="font-semibold text-primary underline underline-offset-4"
-              >
+                <a
+                  href="https://tryhackme.com/p/ruohao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-primary underline underline-offset-4"
+                >
                 Top 1% ranking
               </a>{" "}
               with regular labs across recon/enumeration, exploitation, and post-exploitation (lateral movement, privilege escalation).
             </li>
             <li>
               Documented{" "}
-              <a
-                href="https://writeups.ruohao.dev/"
-                target="_blank"
-                className="font-semibold text-primary underline underline-offset-4"
-              >
+                <a
+                  href="https://writeups.ruohao.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-primary underline underline-offset-4"
+                >
                 write-ups
               </a>{" "}
             </li>

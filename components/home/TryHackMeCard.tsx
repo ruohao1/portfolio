@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+
 import Link from "next/link";
-import Image from "next/image";
 import { Card } from "@/components/ui/card";
 
 export default function TryHackMeCard() {
@@ -8,6 +9,7 @@ export default function TryHackMeCard() {
       <Link
         href="https://tryhackme.com/p/ruohao"
         target="_blank"
+        rel="noopener noreferrer"
         className="block"
       >
         <div className="relative aspect-[700/230] w-full">

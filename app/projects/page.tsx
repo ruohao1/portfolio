@@ -40,24 +40,6 @@ const projects: Project[] = [
     githubUrl: "https://github.com/Ruohao1",
   },
   {
-    title: "Ubuntu Hardening Automation",
-    description: [
-      "Built a hardening automation tool using Python and Ansible, generating auditable reports for ops. Implemented baseline controls aligned with CIS and ANSSI standards.",
-    ],
-    techStack: ["Python", "Ansible", "CIS", "ANSSI", "Ubuntu"],
-    time: "Jun 2025 - Aug 2025",
-    githubUrl: "https://github.com/Ruohao1",
-  },
-  {
-    title: "TryHackMe Labs",
-    description: [
-      "Top 1% ranking with regular labs across recon/enumeration, exploitation, and post-exploitation. Documented write-ups covering tooling like nmap, ffuf, Burp, and Wireshark.",
-    ],
-    techStack: ["Web Exploitation", "PrivEsc", "Enumeration", "Detection/IR"],
-    time: "2023 - Present",
-    liveUrl: "https://tryhackme.com/p/ruohao",
-  },
-  {
     title: "Security Portfolio Website",
     description:
       [
